@@ -1,0 +1,19 @@
+/*selector {
+    property: value;
+}*/
+body {
+  /*background: url(https://cdn.pixabay.com/photo/2017/01/15/22/34/texture-1982914_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background: gray;
+}
+
+h1 {
+  color: rgba(11, 99, 150, .5);
+  border: 2px solid purple;
+}
+
+h4 {
+  background: black;
+  color: white;
+}
