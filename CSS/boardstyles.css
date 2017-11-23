@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+}
+
+/* could also set a class for these and use that */
+tr:nth-of-type(2) td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* could also set a class for these and use that */
+td:nth-of-type(2) {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
