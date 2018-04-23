@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "mongoose": "^5.0.15"
+  },
+  "scripts": {
+    "start": "node references.js"
   }
 }
