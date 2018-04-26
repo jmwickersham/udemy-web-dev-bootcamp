@@ -46,7 +46,7 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 mongoose.connect("mongodb://localhost/yelp_camp");
 
-seedDB();
+// seedDB(); // Seed the database
 
 app.listen(process.env.PORT, process.env.IP, function() {
     console.log("Yelp Camp server has started");
