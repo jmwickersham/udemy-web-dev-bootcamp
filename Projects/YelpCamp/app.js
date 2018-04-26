@@ -1,9 +1,10 @@
 // Require Packages
-var express       = require("express"), 
-    bodyParser    = require("body-parser"),
-    mongoose      = require("mongoose"),
-    passport      = require('passport'),
-    LocalStrategy = require('passport-local');
+var express        = require("express"), 
+    bodyParser     = require("body-parser"),
+    mongoose       = require("mongoose"),
+    passport       = require('passport'),
+    LocalStrategy  = require('passport-local'),
+    methodOverride = require('method-override');
     
 // Require JS Model Exports
 var Campground = require("./models/campground"),
@@ -20,6 +21,7 @@ var commentRoutes    = require('./routes/comments'),
 var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
+app.use(methodOverride('_method'));
 app.set("view engine", "ejs");
 
 // Passport Config
