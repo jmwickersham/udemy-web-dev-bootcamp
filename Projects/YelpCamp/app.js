@@ -50,8 +50,9 @@ app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-// mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://admin:password@ds161529.mlab.com:61529/yelp-camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://admin:password@ds161529.mlab.com:61529/yelp-camp");
+mongoose.connect(process.env.DATABASEURL);
 
 // seedDB(); // Seed the database
 
